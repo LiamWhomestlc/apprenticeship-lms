@@ -1,0 +1,1 @@
+tsx import React from "react"; export default function ProgressBar({value}:{value:number}){ return <div className="w-full bg-gray-200 rounded-2xl h-4"><div className="h-4 rounded-2xl bg-blue-600" style={{width:`${value}%`}}/></div>; }
