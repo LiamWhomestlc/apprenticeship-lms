@@ -1,0 +1,1 @@
+markdown # Apprenticeship LMS ## Getting Started 1. Copy `.env.example` → `.env.local` and update DATABASE_URL. 2. Open this repo in GitHub Codespaces. 3. Install dependencies: `pnpm install` 4. Run migrations: `pnpm prisma migrate deploy` 5. Seed demo data: `pnpm tsx scripts/seed.ts` 6. Start dev server: `pnpm dev` 7. Open port 3000 preview → login at `/sign-in`
