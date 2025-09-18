@@ -1,0 +1,1 @@
+prisma generator client { provider = "prisma-client-js" } datasource db { provider = "postgresql" url = env("DATABASE_URL") } enum Role { LEARNER ASSESSOR EMPLOYER IQA ADMIN } model User { id String @id @default(cuid()) email String @unique hashedPassword String firstName String lastName String role Role createdAt DateTime @default(now()) updatedAt DateTime @updatedAt }
